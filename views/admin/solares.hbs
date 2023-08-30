@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGUIDOR SOLAR / SAN PABLO</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+      <header class="header">
+      <a href="/" class="logo">EL PANEL DEL SOL</a>
+
+        <nav class="navbar">
+        <a href="/" style="--i:1;">Inicio</a>
+        <a href="/masinformacion" style="--i:2;">Mas informacion</a>
+        <a href="/quienessomos" style="--i:3;">Quienes somos</a>
+        <a href="/novedades" style="--i:4;">Novedades</a>
+        <a href="/contacto" style="--i:5;">Contacto</a>
+        <a href="/admin/login" style="--i:6;">Iniciar sesion</a>
+        </nav>
+
+      <div class="social-media">
+        <a href="#" style="--i:1;"><i class='bx bxl-instagram'></i></a>
+        <a href="#" style="--i:2;"><i class='bx bxl-facebook-circle' ></i></a>
+        <a href="#" style="--i:3;"><i class='bx bxl-whatsapp' ></i></a>
+      </div>
+    </header>
+
+    <section class="inicio">
+      <div class="inicio-content">
+        <h3>Lista de novedades solares!</h3>
+        <div class="col-2 text-right">
+            <a href="#" class="btn btn-success"> <i class="fa fa-plus">
+            </i>Nuevo</a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col" class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{id}}</th>
+                            <td>{{titulo}}</td>
+                            <td class="text-center">
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil">Editar</i></a>
+                                <a href="/admin/solares/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash"></i>Eliminar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="contactanos-img">
+        <div class="rhombus6">
+          <img src="images/contactanos.png" alt="">
+        </div>
+      </div>
+
+      <div class="rhombus2"></div>
+
+      
+    </section>
+
+
+
+
+
+
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Benjamin Tedesco 2023</small>
+        </div>
+    </footer>
+
+  

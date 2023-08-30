@@ -1,0 +1,49 @@
+    <header class="header">
+        <a href="/" class="logo">EL PANEL DEL SOL</a>
+
+        <nav class="navbar">
+        <a href="/" style="--i:1;">Inicio</a>
+        <a href="/masinformacion" style="--i:2;">Mas informacion</a>
+        <a href="/quienessomos" style="--i:3;">Quienes somos</a>
+        <a href="/novedades" style="--i:4;">Novedades</a>
+        <a href="/contacto" style="--i:5;">Contacto</a>
+        <a href="/admin/login" style="--i:6;" class="active">Iniciar sesion</a>
+        </nav>
+
+      <div class="social-media">
+        <a href="#" style="--i:1;"><i class='bx bxl-instagram'></i></a>
+        <a href="#" style="--i:2;"><i class='bx bxl-facebook-circle' ></i></a>
+        <a href="#" style="--i:3;"><i class='bx bxl-whatsapp' ></i></a>
+      </div>
+    </header>
+
+    <section class="inicio">
+
+      <div class="rhombus2"></div>
+  
+      <div class="inicio-content">
+        <h1>Iniciar sesion:</h1>
+        <form action="/admin/login" method="post">
+           <div class="form-group">
+            <label for="usuario">Usuario</label>
+            <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp" name="usuario">
+           </div> 
+
+           <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+           </div> 
+
+            <button type="submit" class="btn">Enviar</button> 
+        </form>
+        {{#if error}}
+            <p>Usuario y/o contraseña incorrectas!</p>
+        {{/if}}
+      </div>
+    </section>    
+
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Benjamin Tedesco 2023</small>
+        </div>
+    </footer>
